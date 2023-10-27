@@ -23,6 +23,8 @@ body .mwst_section .mwst_content {
   box-shadow: 5px 10px 18px #888888;
   border-radius: 10px;
   box-shadow: 0px 8px 11px #bdb9b9;
+  width: 100%;
+  max-width: 450px;
 }
 body .mwst_section .mwst_content .mwstr_container1 {
   padding: 15px 10px 20px 10px;
@@ -62,12 +64,16 @@ body .mwst_section .mwst_content .mwstr_container1 .mwstr_form .mwstr_input_wrap
   font-weight: 400;
 }
 body .mwst_section .mwstr_container2 {
-  padding: 15px 10px 20px 10px;
+  padding: 15px 10px 10px 10px;
   border-left: 1.5px solid #000;
   border-right: 1.5px solid #000;
   border-bottom: 1.5px solid #000;
   background-color: rgba(233, 233, 233, 0.2901960784);
   border-radius: 0 0 10px 10px;
+}
+body .mwst_section .mwstr_container2 h4 {
+  color: blue;
+  padding-bottom: 10px;
 }
 body .mwst_section .mwstr_container2 .mwstr_output_wrapper .mwst_styling1 {
   background-color: rgba(233, 233, 233, 0.9019607843);
