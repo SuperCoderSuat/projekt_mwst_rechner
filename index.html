@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt MwSt-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="mwst_section">
+        <h1>Mehrwertsteuer-Rechner</h1> 
+        <article class="mwst_content">
+            <div class="mwstr_container1">
+                <form class="mwstr_form" onsubmit="return false">
+                    <div class="mwstr_input_wrapper">
+                        <!-- Was soll berechnet werden? -->
+                        <div class="mwst_styling1">
+                            <p>Was soll berechnet werden?</p>
+                            <div>
+                                <input type="radio" name="aufschlagen" id="aufschlagen">
+                                <label for="">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="aufschlagen" id="abziehen">
+                                <label for="">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                            </div>
+                        </div>
+                        <!-- Mehrwertsteuersatz -->
+                        <div class="mwst_styling1">
+                            <p>Mehrwertsteuersatz</p>
+                            <div>
+                                <input type="radio" name="prozent" id="prozent_19">
+                                <label for="">19%</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="prozent" id="prozent_7">
+                                <label for="">7%</label>
+                            </div>
+                        </div>
+                        <!-- Nettobetrag -->
+                        <div class="mwst_styling2">
+                            <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</p>
+                            <input type="number" step="any" name="input_zahl" id="input_zahl">
+                        </div>
+                        <!-- Submit -->
+                        <input type="submit" value="Berechnen" id="berechnen" onclick="rechnen()">
+                    </div>
+                </form>
+            </div>
+            <div class="mwstr_container2">
+                <div class="mwstr_output_wrapper">
+                    <!-- Was soll berechnet werden? -->
+                    <div class="mwst_styling1">
+                        <p>Mehrwertsteuerbetrag</p>
+                        <div class="output">
+                            <p id="output1"></p>
+                            <p>€</p>
+                        </div>
+                    </div>
+                    <!-- Mehrwertsteuersatz -->
+                    <div class="mwst_styling1">
+                        <p>Bruttobetrag (Endpreis)</p>
+                        <div class="output">
+                            <p id="output2"></p>
+                            <p>€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
